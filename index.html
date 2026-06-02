@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirere Evangeline | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-text">Initializing...</div>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">NE<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link active">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="projects.html"   class="nav-link">Projects</a></li>
+      <li><a href="skills.html"     class="nav-link">Skills</a></li>
+      <li><a href="#resume"         class="nav-link">Resume</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      <li><a href="#resources"     class="nav-link">Resources</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ========== HOME SECTION ========== -->
+  <section id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-wrapper">
+      <div class="hero-content reveal">
+        <p class="hero-greeting">Hello, I&rsquo;m</p>
+        <h1 class="hero-name">Nirere<br /><span class="accent">Evangeline</span></h1>
+        <p class="hero-role">
+          <span class="typing-text"></span><span class="cursor">|</span>
+        </p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-primary">View My Work</a>
+          <a href="contact.html"  class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/nirere-evangeline" target="_blank" class="hero-social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/nirere-evangeline" target="_blank" class="hero-social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/nirere_ev" target="_blank" class="hero-social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="hero-image-frame">
+          <img src="images/profile.jpg" alt="Nirere Evangeline" class="hero-profile-photo" />
+          <div class="image-ring ring1"></div>
+          <div class="image-ring ring2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-dot"></div></div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <img src="images/profile.jpg" alt="Nirere Evangeline" class="profile-photo" />
+            <div class="image-ring ring1"></div>
+            <div class="image-ring ring2"></div>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <h3>Who Am I?</h3>
+          <p>
+            I&rsquo;m <strong>Nirere Evangeline</strong>, a passionate IT Student and Web Developer
+            dedicated to crafting immersive digital experiences. I love blending creativity
+            with technology to build solutions that are both beautiful and functional.
+          </p>
+          <p>
+            I specialise in front-end development with a keen interest in 3D web experiences,
+            interactive UI designs, and full-stack applications. When I&rsquo;m not coding,
+            I&rsquo;m exploring new technologies and pushing the boundaries of what&rsquo;s possible on the web.
+          </p>
+          <p>
+            My goal is to graduate as a well-rounded IT professional who can design, develop,
+            and deploy complete digital solutions — from database design to beautiful user interfaces.
+          </p>
+          <div class="about-skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Three.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="info-cards-grid">
+        <div class="info-card reveal">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Education</h3>
+          <p>IT Student pursuing a degree in Information Technology with a focus on software development and web technologies.</p>
+        </div>
+        <div class="info-card reveal">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Experience</h3>
+          <p>Hands-on experience building responsive web applications, REST APIs, and interactive 3D experiences.</p>
+        </div>
+        <div class="info-card reveal">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>Based in Gicumbi, Rwanda — open to remote collaboration and internship opportunities worldwide.</p>
+        </div>
+        <div class="info-card reveal">
+          <i class="fas fa-language"></i>
+          <h3>Languages</h3>
+          <p>Fluent in English, Kinyarwanda, and French. Comfortable working in multilingual team environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>E-Commerce Platform</h3>
+          <p>A full-stack e-commerce web app with user authentication, product management, and payment integration built with Node.js and MySQL.</p>
+          <div class="card-tags"><span>Node.js</span><span>MySQL</span><span>JavaScript</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/ecommerce-platform" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-cube"></i></div>
+          <h3>3D Portfolio Viewer</h3>
+          <p>An interactive 3D product showcase using Three.js, allowing users to rotate and explore 3D models within the browser.</p>
+          <div class="card-tags"><span>Three.js</span><span>WebGL</span><span>JavaScript</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/3d-portfolio-viewer" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-tasks"></i></div>
+          <h3>Task Manager App</h3>
+          <p>A responsive task management application with drag-and-drop functionality, local storage persistence, and priority tagging.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/task-manager-app" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-piggy-bank"></i></div>
+          <h3>Digital Savings Tracker</h3>
+          <p>A digital savings management web app that helps users track their savings goals, monitor progress, and manage financial records efficiently.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/digital-savings-tracker" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-store"></i></div>
+          <h3>Byumba Inyange Website</h3>
+          <p>Official website for Byumba Inyange — a local business platform based in Gicumbi, Rwanda, showcasing products and services to the community.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/byumba-inyange" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-database"></i></div>
+          <h3>Student Database System</h3>
+          <p>A web-based student record management system with CRUD operations, role-based access, and export functionality.</p>
+          <div class="card-tags"><span>PHP</span><span>MySQL</span><span>CSS</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/student-database-system" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-comments"></i></div>
+          <h3>Real-Time Chat App</h3>
+          <p>A real-time messaging application built with WebSockets enabling instant communication with a modern UI.</p>
+          <div class="card-tags"><span>Node.js</span><span>Socket.io</span><span>CSS</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/realtime-chat-app" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Analytics Dashboard</h3>
+          <p>A data visualisation dashboard with interactive charts, real-time data updates, and customisable widgets.</p>
+          <div class="card-tags"><span>JavaScript</span><span>Chart.js</span><span>CSS</span></div>
+          <div class="card-actions">
+            <a href="https://github.com/nirere-evangeline/analytics-dashboard" target="_blank" class="btn btn-small">Source Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="accent">Skills</span></h2>
+
+      <div id="skills-wrapper" class="skills-grid">
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <span class="skill-name">HTML5</span>
+            <span class="skill-percent">92%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="92"></div></div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <span class="skill-name">CSS3</span>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+            <span class="skill-name">Node.js</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <span class="skill-name">MySQL</span>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="78"></div></div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-cube"></i></div>
+            <span class="skill-name">Three.js</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <span class="skill-name">Git</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <span class="skill-name">Responsive Design</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+        </div>
+
+      </div>
+
+      <!-- Tools & Tech icons -->
+      <h3 class="sub-heading reveal" style="margin-top:4rem;">Tools & <span class="accent">Technologies</span></h3>
+      <div class="tools-grid">
+        <div class="tool-badge reveal"><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div class="tool-badge reveal"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="tool-badge reveal"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+        <div class="tool-badge reveal"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div class="tool-badge reveal"><i class="fas fa-database"></i><span>MySQL</span></div>
+        <div class="tool-badge reveal"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="tool-badge reveal"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="tool-badge reveal"><i class="fas fa-cube"></i><span>Three.js</span></div>
+        <div class="tool-badge reveal"><i class="fab fa-php"></i><span>PHP</span></div>
+        <div class="tool-badge reveal"><i class="fab fa-figma"></i><span>Figma</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== RESUME SECTION ========== -->
+  <section id="resume">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="accent">Resume</span></h2>
+      <p class="section-sub reveal">A summary of my education, experience, and achievements.</p>
+
+      <div class="resume-grid">
+
+        <div class="resume-column reveal">
+          <h3 class="resume-col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+
+          <div class="resume-card">
+            <div class="resume-dot"></div>
+            <span class="resume-date">2022 – Present</span>
+            <h4>Bachelor of Science in Information Technology</h4>
+            <p class="resume-place">University / Institution — Gicumbi, Rwanda</p>
+            <p>Studying software development, database systems, web technologies, networking, and IT project management.</p>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-dot"></div>
+            <span class="resume-date">2019 – 2022</span>
+            <h4>High School Diploma — MPC Combination</h4>
+            <p class="resume-place">Byumba Secondary School — Gicumbi, Rwanda</p>
+            <p>Focused on Mathematics, Physics, and Computer Science with distinction in ICT subjects.</p>
+          </div>
+        </div>
+
+        <div class="resume-column reveal">
+          <h3 class="resume-col-title"><i class="fas fa-briefcase"></i> Experience</h3>
+
+          <div class="resume-card">
+            <div class="resume-dot"></div>
+            <span class="resume-date">2024 – Present</span>
+            <h4>Freelance Web Developer</h4>
+            <p class="resume-place">Self-Employed — Remote</p>
+            <p>Designing and developing websites for local businesses, including the Byumba Inyange platform and Digital Savings Tracker.</p>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-dot"></div>
+            <span class="resume-date">2023</span>
+            <h4>IT Attachment / Internship</h4>
+            <p class="resume-place">Local Organisation — Gicumbi, Rwanda</p>
+            <p>Supported IT infrastructure, built internal web tools, and assisted with database management.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="resume-download reveal">
+        <p>Want the full details? Download my CV below.</p>
+        <a href="assets/Nirere_Evangeline_CV.pdf" download class="btn btn-primary">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <h3>Let&rsquo;s Connect</h3>
+          <p>Have a project in mind or want to collaborate? Feel free to reach out. I&rsquo;m always open to discussing new opportunities.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>nirere.evangeline@email.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Gicumbi, Rwanda</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Available Mon – Fri, 8 AM – 6 PM (CAT)</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/nirere-evangeline" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/nirere-evangeline" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/nirere_ev" target="_blank" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent successfully!
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DEV RESOURCES SECTION ========== -->
+  <section id="resources">
+    <div class="container">
+      <h2 class="section-title reveal">Dev <span class="accent">Resources</span></h2>
+      <p class="section-sub reveal">Essential links and tools for every Software Development student.</p>
+
+      <div class="resources-grid">
+
+        <a href="https://github.com" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fab fa-github"></i></div>
+          <h4>GitHub</h4>
+          <p>Host your code, collaborate, and build your developer portfolio.</p>
+        </a>
+
+        <a href="https://developer.mozilla.org" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fas fa-book"></i></div>
+          <h4>MDN Web Docs</h4>
+          <p>The ultimate reference for HTML, CSS, and JavaScript documentation.</p>
+        </a>
+
+        <a href="https://stackoverflow.com" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fab fa-stack-overflow"></i></div>
+          <h4>Stack Overflow</h4>
+          <p>Find answers to coding problems and connect with developers worldwide.</p>
+        </a>
+
+        <a href="https://www.freecodecamp.org" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fab fa-free-code-camp"></i></div>
+          <h4>freeCodeCamp</h4>
+          <p>Free coding courses, certifications, and projects for all levels.</p>
+        </a>
+
+        <a href="https://www.w3schools.com" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h4>W3Schools</h4>
+          <p>Easy-to-follow tutorials for web technologies and programming languages.</p>
+        </a>
+
+        <a href="https://css-tricks.com" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS-Tricks</h4>
+          <p>Tips, tutorials, and guides for modern CSS and front-end development.</p>
+        </a>
+
+        <a href="https://nodejs.org/en/docs" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fab fa-node-js"></i></div>
+          <h4>Node.js Docs</h4>
+          <p>Official Node.js documentation and API reference for back-end development.</p>
+        </a>
+
+        <a href="https://dev.to" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fab fa-dev"></i></div>
+          <h4>DEV Community</h4>
+          <p>A community of developers sharing articles, tutorials, and insights.</p>
+        </a>
+
+        <a href="https://leetcode.com" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fas fa-code"></i></div>
+          <h4>LeetCode</h4>
+          <p>Practice coding challenges and prepare for technical interviews.</p>
+        </a>
+
+        <a href="https://www.figma.com" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fab fa-figma"></i></div>
+          <h4>Figma</h4>
+          <p>Design UI/UX prototypes and collaborate on interface design projects.</p>
+        </a>
+
+        <a href="https://vercel.com" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fas fa-rocket"></i></div>
+          <h4>Vercel</h4>
+          <p>Deploy your web projects instantly with free hosting and CI/CD pipelines.</p>
+        </a>
+
+        <a href="https://roadmap.sh" target="_blank" class="resource-card reveal">
+          <div class="resource-icon"><i class="fas fa-map"></i></div>
+          <h4>Roadmap.sh</h4>
+          <p>Step-by-step learning roadmaps for front-end, back-end, and full-stack developers.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; 2025 Nirere Evangeline. Crafted with <span class="accent">&hearts;</span> & Three.js</p>
+    <div class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="threeScene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
